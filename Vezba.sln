@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slova", "Slova\Slova.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domaci", "Domaci\Domaci.csproj", "{5A646F90-C172-42B3-928D-3CC2C8423765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{B38EECB0-479D-45EF-ABE8-E48E4EE7C7FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5A646F90-C172-42B3-928D-3CC2C8423765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A646F90-C172-42B3-928D-3CC2C8423765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A646F90-C172-42B3-928D-3CC2C8423765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38EECB0-479D-45EF-ABE8-E48E4EE7C7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38EECB0-479D-45EF-ABE8-E48E4EE7C7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38EECB0-479D-45EF-ABE8-E48E4EE7C7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38EECB0-479D-45EF-ABE8-E48E4EE7C7FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
