@@ -13,7 +13,7 @@ namespace Fibonacci
             Console.Write("Unesite koliko elemenata Fibonacijevog niza zelite da saberete: ");
             int kolicina = int.Parse ( Console.ReadLine());
             Console.Write(" \n ========================================== \n \n");
-            int[] nizFibonacci = { 0, 1 }; //Pocetne vrednosti Fibonacijevog niza.
+            long [] nizFibonacci = { 0, 1 }; //Pocetne vrednosti Fibonacijevog niza.
 
             if (kolicina < 0)
             {
@@ -28,11 +28,13 @@ namespace Fibonacci
             
             for (int index = 0; index < kolicina-2; index++)
             {
+             
                 nizFibonacci[index + 2] = nizFibonacci[index] + nizFibonacci[index + 1];  // Formiramo Fib. niz
                                                                                             
             }
+            
 
-            foreach (int broj in nizFibonacci )
+            foreach (long broj in nizFibonacci )
             {
                 Console.Write($"{broj}, ");   //Ispisujemo trazeni broj elemenata Fib. niza
             }
