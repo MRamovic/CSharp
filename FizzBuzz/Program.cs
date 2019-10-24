@@ -29,6 +29,7 @@ namespace FizzBuzz
                 {
                     nizBrojeva[indeks] = (indeks + 1);
                 }
+                Console.WriteLine("\n");
 
                 foreach (int broj in nizBrojeva)
                 {
@@ -36,7 +37,9 @@ namespace FizzBuzz
                     Console.Write($"{broj}, ");
 
                 }
-                Console.WriteLine("\n ==========================================================");
+                Console.WriteLine("\n " +
+                    "\n ==========================================================" +
+                    "\n ");
 
                 for (int index = 0; index < nizBrojeva.Length; index++)
                 {
