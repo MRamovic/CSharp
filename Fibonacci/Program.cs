@@ -38,7 +38,7 @@ namespace Fibonacci
             }
 
             int brojac = 0;
-            int zbir=0;
+            long zbir=0;
 
             while (brojac<nizFibonacci.Length )
             {
