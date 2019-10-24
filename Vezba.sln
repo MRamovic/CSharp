@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{F77EBB09-C119-4D36-ABF1-57080C42DA36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolatzov", "Kolatzov\Kolatzov.csproj", "{9B2C6ABC-8151-45AE-BB2D-7EE9C31564AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F77EBB09-C119-4D36-ABF1-57080C42DA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F77EBB09-C119-4D36-ABF1-57080C42DA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F77EBB09-C119-4D36-ABF1-57080C42DA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2C6ABC-8151-45AE-BB2D-7EE9C31564AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2C6ABC-8151-45AE-BB2D-7EE9C31564AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2C6ABC-8151-45AE-BB2D-7EE9C31564AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2C6ABC-8151-45AE-BB2D-7EE9C31564AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
