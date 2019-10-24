@@ -37,9 +37,7 @@ namespace FizzBuzz
                     Console.Write($"{broj}, ");
 
                 }
-                Console.WriteLine("\n " +
-                    "\n ==========================================================" +
-                    "\n ");
+                Console.WriteLine("\n \n ================================================================  \n ");
 
                 for (int index = 0; index < nizBrojeva.Length; index++)
                 {
