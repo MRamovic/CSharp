@@ -35,13 +35,9 @@ namespace Pravougaonik
 
                 for ( int m = 1; m <= b; m++)
                 {
-                    if (n==1)
-                     {
-                        Console.Write("* "); // ispis stranice a
-                      
-                    }
+                   
 
-                    if (n == a)   
+                    if (n==1 || n == a)   
                     {
                         Console.Write("* "); //ispis stranice a
                     }
