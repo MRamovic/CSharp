@@ -10,53 +10,49 @@ namespace Pravougaonik
     {
         static void Main(string[] args)
         {
-            int a, b;
+            uint a, b;
+
             while (true)
             {
-
                 try
                 {
                     Console.WriteLine("Unesite duzinu stranice a: ");
-                    a = int.Parse(Console.ReadLine());
+                        a = uint.Parse(Console.ReadLine());
                     Console.WriteLine("Unesite duzinu stranice b: ");
-                    b = int.Parse(Console.ReadLine());
+                        b = uint.Parse(Console.ReadLine());
                     break;
                 }
-                catch
-                {
-                    Console.WriteLine("Uneli ste poresnu vrednost! Pokusajte ponovo! ");
-                    Console.WriteLine();
-                }
+                    catch 
+                    {
+                        Console.WriteLine("Uneli ste poresnu vrednost! Pokusajte ponovo! ");
+                        Console.WriteLine();
+                    }
 
             }
-            for (int n=1; n<=a; n++ )
+
+
+            for (int n = 1; n <= a; n++)
             {
-                
 
-                for ( int m = 1; m <= b; m++)
+                for (int m = 1; m <= b; m++)
                 {
-                   
 
-                    if (n==1 || n == a)   
+                    if (n == 1 || n == a)
                     {
                         Console.Write("* "); //ispis stranice a
                     }
-                    else if (n!=1)
+                    else if (n != 1)
                     {
-                       if (m==1 ||m==b)
+                        if (m == 1 || m == b)
                         {
                             Console.Write("* "); //ispis stranice b
-                        }else
+                        }
+                        else
                         {
                             Console.Write("  "); // ispis praznih polja unutar pravougaonika
                         }
                     }
 
-
-                 
-                       
-
-                     
                 }
                 Console.WriteLine();
             }
