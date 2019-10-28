@@ -14,7 +14,7 @@ namespace Pravougaonik
 
             while (true)
             {
-                try
+                try 
                 {
                     Console.WriteLine("Unesite duzinu stranice a: ");
                         a = uint.Parse(Console.ReadLine());
