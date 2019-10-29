@@ -53,6 +53,7 @@ namespace Sifriranje
                     case '1':
 
                         Console.WriteLine("Sifrovani tekst:");
+                        promenljiva = null;
                         foreach (char slovo in unos)
                         {
                             if (slovo > 96 && slovo < 123)
@@ -82,6 +83,7 @@ namespace Sifriranje
 
                         }
                         Console.WriteLine();
+                        
                         Console.ReadKey();
                         break;
 
@@ -107,8 +109,10 @@ namespace Sifriranje
                                 {
                                     Console.Write(slovo);
                                 }
+
                             }
                             Console.WriteLine();
+                            
                             break;
                         }
 
