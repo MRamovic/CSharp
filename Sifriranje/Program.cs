@@ -35,8 +35,6 @@ namespace Sifriranje
 
             }
 
-            //promenljiva = new char[unos.Length];
-
 
             while (true)
             { 
