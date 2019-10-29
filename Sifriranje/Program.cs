@@ -11,10 +11,9 @@ namespace Sifriranje
         static void Main(string[] args)
         {
             
-            int brojac, broj, i=0;
-            string  unos,citanje;
-            char[] promenljiva;
-            char[] promenljiva2;
+            int brojac, broj, i;
+            string  unos;
+            string promenljiva = null;
 
             while (true)
             {
@@ -36,7 +35,7 @@ namespace Sifriranje
 
             }
 
-            promenljiva = new char[unos.Length];
+            //promenljiva = new char[unos.Length];
 
 
             while (true)
@@ -55,15 +54,13 @@ namespace Sifriranje
                 {
                     case '1':
 
-                       
-                
-                       
-                
+                        Console.WriteLine("Sifrovani tekst:");
                         foreach (char slovo in unos)
                         {
                             if (slovo > 96 && slovo < 123)
                             {
                                 brojac = slovo + broj;
+
                                 if (brojac > 122)
                                 {
                                     brojac = brojac - 26;
@@ -73,29 +70,51 @@ namespace Sifriranje
                                 {
                                     Console.Write((char)brojac);
                                 }
-                                promenljiva[i] = (char)brojac;
-                                ++i;
+                                
+                                promenljiva += ($"{(char)(brojac)}");
                             }
                             else
                             {
                                 Console.Write(slovo);
-                                promenljiva[i] = slovo;
-                                ++i;
+                                
+                                promenljiva += ($"{(char)(slovo)}");
                             }
                            
 
 
                         }
+                        Console.WriteLine();
                         Console.ReadKey();
                         break;
 
                     case '2':
                         
                         {
-                           
+                            Console.WriteLine("Desifrovani tekst:");
+
+                            foreach (char slovo in promenljiva)
+                            { if (slovo > 96 && slovo < 123)
+                                {
+                                    i = slovo - broj; ;
+                                    if (i < 97)
+                                    {
+                                        i = i + 26;
+                                        Console.Write($"{(char)(i)}");
+                                    }
+                                    else
+                                    {
+                                        Console.Write((char)i);
+                                    }
+                                }else
+                                {
+                                    Console.Write(slovo);
+                                }
+                            }
+                            Console.WriteLine();
+                            break;
                         }
 
-                        break;
+                        
 
 
                     case '3':
