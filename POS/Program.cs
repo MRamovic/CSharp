@@ -18,8 +18,8 @@ namespace POS
             int kolicina = 0;
             
 
-            File.WriteAllText("Meni.txt", " ");
-            File.AppendAllText("Meni.txt", Environment.NewLine + "Artikli:\nSifra   Naziv   Cena    Kolicina ");
+            File.WriteAllText("Meni.txt", "Artikli:\nSifra              Naziv               Cena                Kolicina ");
+           
 
             //Napravili smo listu tuplova koja sadrzi sifru, naziv, cenu i kolicinu
             List<(string sifra, string naziv, int cena, int  kolicina)> POS = new List<(string, string, int, int)>();
@@ -77,13 +77,13 @@ namespace POS
                         {
                             Console.WriteLine("Greska u unosu podataka!");
                         }
-
+                       
                         
 
                         POS.Add((sifra, naziv, cena, kolicina));                                       //cuvanje artikla
 
-                        File.AppendAllText("Meni.text", Environment.NewLine + $" {POS[POS.Count - 1].sifra},  {POS[POS.Count - 1].naziv },  " +
-                                    $"{POS[POS.Count - 1].cena},  {POS[POS.Count - 1].kolicina }\n ");
+                        File.AppendAllText("Meni.txt", Environment.NewLine + $" {POS[POS.Count - 1].sifra}              {POS[POS.Count - 1].naziv }                " +
+                                    $"{POS[POS.Count - 1].cena}              {POS[POS.Count - 1].kolicina }\n ");
                       
                         break;
 
