@@ -11,11 +11,11 @@ namespace POS
     {
         static void Main(string[] args)
         {
-            int kol = 0;
-            string sifra = null;
-            string naziv = null;
-            int cena = 0;
-            int kolicina = 0;
+            int kol = 0;                                            //promenljiva za cuvanje unete kolicine prilikom izdavanja racuna
+            string sifra = null;                                    //promenljiva za sifru artikla 
+            string naziv = null;                                    //promenljiva za naziv artikla
+            int cena = 0;                                           //promenljiva za cenu artikla
+            int kolicina = 0;                                       //promenljiva za kolicinu artikla
             
 
             File.WriteAllText("Meni.txt", "Artikli:\nSifra              Naziv               Cena                Kolicina ");
@@ -38,7 +38,7 @@ namespace POS
                               "4 - Izdavanje racuna\n" +
                               "5 - Uklanjanje artikala\n" +
                               "6 - Pronadji sifru artikla\n" +
-                              "7 - Izlaz\n" +
+                              "7 - Izlaz\n\n" +
                               "Izaberite: ");
 
 
@@ -342,6 +342,9 @@ namespace POS
 
                     case '5':                                                               // uklanjanje artikala
 
+
+                        int indeks3 = 0;
+
                         if (POS.Count == 0)
                         {
                             Console.WriteLine("Ne postoji nijedan artikal! Prvo unesite artikal opcija '1 - Unos artikala'\n");
@@ -357,7 +360,7 @@ namespace POS
                             {
                                 if (sifraa - 1 < POS.Count)
                                 {
-
+                                    Console.WriteLine($"Uklonili ste artikal: {POS[sifraa - 1].naziv}\n");
                                     POS.RemoveAt(sifraa - 1);
                                 }
                                 else
@@ -365,16 +368,24 @@ namespace POS
                                     Console.WriteLine("Nepostojeca sifra!");
                                 }
                             }
-                            else                                                                // pretrazivanje po imenu
+                            else  if (indeks3<POS.Count )                                                              // pretrazivanje po imenu
                             {
                                 for (int i = 0; i < POS.Count; i++)
                                 {
                                     if (POS[i].naziv.Contains(unos))
                                     {
+                                        Console.WriteLine($"Uklonili ste artikal: {POS[i].naziv}\n");
                                         POS.RemoveAt(i);
                                         break;
                                     }
+                                  
                                 }
+                                indeks3++;
+                               
+                            }
+                            else
+                            {
+                                Console.WriteLine("Ne postoji artikal ili ste uneli pogresan naziv!");
                             }
                         }
                         break;
