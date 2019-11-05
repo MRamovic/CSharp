@@ -51,7 +51,7 @@ namespace POS
                 {
 
                     case '1':                                                                       //unos novih artikala
-
+                        bool test = false;
                         Console.Write("Unesite sifru artikla: ");
                         sifra = Console.ReadLine();
                         
@@ -62,22 +62,30 @@ namespace POS
                                 {
                                 Console.WriteLine($"Artikal vec postoji: {POS[brojac].naziv}.  Koristite drugu sifru!");
                                 Console.WriteLine("Ako zelite da dodate kolicinu postojecem artiklu odaberite opciju '2 - Dodaj kolicinu postojecem artiklu'\n");
+                                test = true;
                                 break;
                                 }
                         }
-                        try
+                        if (test == true)
                         {
-                            Console.Write("Unesite naziv artikla: ");
-                            naziv = Console.ReadLine();
-                            Console.Write("Unesite cenu artikla: ");
-                            cena = int.Parse ( Console.ReadLine());
-                            Console.Write("Unesite kolicinu: ");
-                            kolicina = int.Parse(Console.ReadLine());
-                        }catch
-                        {
-                            Console.WriteLine("Greska u unosu podataka!");
+                            break;
                         }
-                       
+                        
+                            try
+                            {
+                                Console.Write("Unesite naziv artikla: ");
+                                naziv = Console.ReadLine();
+                                Console.Write("Unesite cenu artikla: ");
+                                cena = int.Parse(Console.ReadLine());
+                                Console.Write("Unesite kolicinu: ");
+                                kolicina = int.Parse(Console.ReadLine());
+                            }
+                            catch
+                            {
+                               
+                                Console.WriteLine("Greska u unosu podataka!");
+                            }
+                        
                         
 
                         POS.Add((sifra, naziv, cena, kolicina));                                       //cuvanje artikla
@@ -433,6 +441,7 @@ namespace POS
                         
 
                         Console.WriteLine("Dovidjenja!\n Hvala!");
+                        File.WriteAllText("Meni.txt", " ");
                         Console.ReadKey();
 
                         return;
