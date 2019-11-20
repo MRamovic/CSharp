@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sifriranje", "Sifriranje\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS", "POS\POS.csproj", "{FCF608C8-B805-4C71-BAAE-2B8540FF696D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Igra reci", "Igra reci\Igra reci.csproj", "{609186AC-B238-4A8B-90F6-3E6659A6F772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{FCF608C8-B805-4C71-BAAE-2B8540FF696D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF608C8-B805-4C71-BAAE-2B8540FF696D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF608C8-B805-4C71-BAAE-2B8540FF696D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609186AC-B238-4A8B-90F6-3E6659A6F772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609186AC-B238-4A8B-90F6-3E6659A6F772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609186AC-B238-4A8B-90F6-3E6659A6F772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609186AC-B238-4A8B-90F6-3E6659A6F772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
